@@ -260,10 +260,7 @@ function gameLoop() {
   update();
   // render() function here
   render();
-
-  // requestAnimationFrame() calls gameLoop() function 60 times per second. On some browser, it depends on its refreshing rate
-  requestAnimationFrame(gameLoop);
 }
 
-// activate gameLoop() function
-gameLoop();
+// call gameLoop() function 60 times per second
+setInterval(gameLoop, 1000 / 60);
