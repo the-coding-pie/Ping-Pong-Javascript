@@ -262,5 +262,5 @@ function gameLoop() {
   render();
 }
 
-// call gameLoop() function 60 times per second
+// calls gameLoop() function 60 times per second
 setInterval(gameLoop, 1000 / 60);
